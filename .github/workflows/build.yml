@@ -10,8 +10,7 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build
-      - run: npx cap add android
-      - run: npx cap sync android
+      - run: npx cap sync
       - uses: actions/setup-java@4
         with:
           java-version: 17
